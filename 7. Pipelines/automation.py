@@ -3,15 +3,16 @@ import mysql.connector
 # Import libraries required for connecting to DB2
 import ibm_db
 # Connect to MySQL
-connection = mysql.connector.connect(user='root', password='Mjk2ODQtd2F6aXJy',host='127.0.0.1',database='sales')
+# Database connection information to be replaced by your database info.
+connection = mysql.connector.connect(user='<enter user here>', password='<enter password here>',host='<enter host here>',database='sales')
 # create cursor for mysql
 cursor = connection.cursor()
 # Connect to DB2
-dsn_hostname = "824dfd4d-99de-440d-9991-629c01b3832d.bs2io90l08kqb1od8lcg.databases.appdomain.cloud" # e.g.: "dashdb-txn-sbox-yp-dal09-04.services.dal.bluemix.net"
-dsn_uid = "rwl21876"        # e.g. "abc12345"
-dsn_pwd = "7F4BaXTradGdTGh4"      # e.g. "7dBZ3wWt9XN6$o0J"
-dsn_port = "30119"                # e.g. "50000" 
-dsn_database = "bludb"            # i.e. "BLUDB"
+dsn_hostname = "<enter hostname here>" # e.g.: "dashdb-txn-sbox-yp-dal09-04.services.dal.bluemix.net"
+dsn_uid = "<enter database uid here"        # e.g. "abc12345"
+dsn_pwd = "<enter password here"      # e.g. "7dBZ3wWt9XN6$o0J"
+dsn_port = "<enter port here>"                # e.g. "50000" 
+dsn_database = "<enter info here>"            # i.e. "BLUDB"
 dsn_driver = "{IBM DB2 ODBC DRIVER}" # i.e. "{IBM DB2 ODBC DRIVER}"           
 dsn_protocol = "TCPIP"            # i.e. "TCPIP"
 dsn_security = "SSL"              # i.e. "SSL"
